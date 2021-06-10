@@ -33,4 +33,5 @@ catkin_ws/src/deep_learning/mobile_net_ssd/graphs
 *.svg
 bags/
 .ipynb
-*.DS_store
+.DS_Store?
+.DS_Store
