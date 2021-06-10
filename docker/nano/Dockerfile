@@ -137,15 +137,6 @@ WORKDIR ${HOME}/moos-ivp
 RUN ./build.sh
 
 
-######################################## duckieboat base ########################################
-
-# clone duckieboat repo
-WORKDIR ${HOME}
-RUN mkdir -p duckiepond-nctu/catkin_ws/src/ 
-WORKDIR ${HOME}/duckiepond-nctu/catkin_ws/src/
-RUN git clone --recursive https://github.com/ARG-NCTU/duckieboat.git
-
-
 ##################################### setting #####################################
 
 RUN chown -R ${USER}:${USER} ${HOME}/
